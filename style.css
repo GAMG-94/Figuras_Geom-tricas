@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+/* *ENCABEZADO */
+
+.header{
+    height: 126px;
+    width: 100%;
+    background-color: rgb(0, 94, 255);
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.header-title{
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .header-paragraph{
+    font-size: 18px;
+    padding: 6px;
+}
+
+/* *RESPUESTA */
+
+.answer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.answer p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* *CONTENEDOR */
+
+.figure {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+/* *CAJAS */
+
+.box {
+    width: 30%;
+    height: 620px;
+    border: 3px solid rgb(0, 93, 255);
+    border-radius: 10px;
+    margin: 14px;
+    float: left;
+}
+
+/* *ENCABEZADO Y MAIN DE LA CAJA */
+
+.box-header {
+    background-color: rgb(0, 93, 255);
+    padding: 12px 0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.box-main {
+    text-align: center;
+    padding: 10px;
+}
+
+.box-main__text {
+    font-size: 20px;    
+}
+
+.box-main__imput {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 93, 255);
+    border:  solid rgb(0, 93, 255);
+    border-radius: 10px;
+}
+
+.box-main__btn {
+    background-color: rgb(0, 93, 255);
+    color: #fff;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-style: none;
+    border-radius: 18px;
+    transition: .4s;
+}
+
+.box-main__btn:hover {
+    background-color: rgb(0, 64, 175);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.box-main__btn:active {
+    background-color: rgb(72, 139, 255);
+}
+
+/* *WEB RESPONSIVE */
+
+@media screen and (max-width: 1021px) {
+    .figures {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        margin: 10px;        
+        height: 660px;
+    }
+
+    .box-main__imput {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .header-paragraph {
+        font-size: 16px;
+    }
+
+    .box {
+        width: calc(100% - 30px);
+        margin: 20px;        
+        height: auto;
+    }
+
+    .box-main__imput {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        height: auto;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+
+    .header-paragraph {
+        font-size: 8px;
+    }
+
+    .box {
+        width: calc(100% - 30px);
+        margin: 20px;        
+        height: auto;
+    }
+
+    .box-main__imput {
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
